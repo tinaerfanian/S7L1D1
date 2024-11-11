@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Comparison</title>
+ 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-color: #31ab4d;">
+    <div class="container mt-5">
+        <h1 class="text-center mb-4" style="color: #9c2d62;">Inserisci i Dati dell'Utente</h1>
+        
+  
+        <form id="userForm">
+            <div class="form-group">
+                <label for="firstName" style="color: #9c2d62;">Nome</label>
+                <input type="text" class="form-control" id="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName" style="color: #9c2d62;">Cognome</label>
+                <input type="text" class="form-control" id="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="age" style="color: #9c2d62;">Età</label>
+                <input type="number" class="form-control" id="age" required>
+            </div>
+            <div class="form-group">
+                <label for="location" style="color: #9c2d62;">Luogo</label>
+                <input type="text" class="form-control" id="location" required>
+            </div>
+            <button type="submit" class="btn btn-primary" style="background-color: #9c2d62; text-align: center;">Aggiungi Utente</button>
+        </form>
+
+       
+        <h2 class="text-center mt-5" style="color: #9c2d62;">Lista degli Utenti</h2>
+        <ul id="userList" class="list-group mt-3"></ul>
+    </div>
+
+ 
+    <script src="./es1.js"></script>
+</body>
+</html>

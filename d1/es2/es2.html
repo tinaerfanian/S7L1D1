@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Form</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-color: #f79c40;">
+    <div class="container mt-5" text-center>
+        <h1 class="text-center mb-4" style="color: #8b09b2;">Inserisci i Dati dell'Animale Domestico</h1>
+        
+        <!-- form di dati di aniamli-->
+        <form id="petForm">
+            <div class="form-group">
+                <label for="petName" style="color: indigo;">Nome dell'Animale</label>
+                <input type="text" class="form-control" id="petName" required>
+            </div>
+            <div class="form-group">
+                <label for="ownerName" style="color: indigo;">Nome del Proprietario</label>
+                <input type="text" class="form-control" id="ownerName" required>
+            </div>
+            <div class="form-group">
+                <label for="species" style="color: indigo;">Specie</label>
+                <input type="text" class="form-control" id="species" required>
+            </div>
+            <div class="form-group">
+                <label for="breed" style="color: indigo;">Razza</label>
+                <input type="text" class="form-control" id="breed" required>
+            </div>
+            <button type="submit" class="btn btn-success justify-content-center " >Aggiungi Animale</button>
+        </form>
+
+    <!--lista di animali inseriti-->
+        <h2 class="text-center mt-5" style="color: #8b09b2;">Lista degli Animali Domestici</h2>
+        <ul id="petList" class="list-group mt-3"></ul>
+    </div>
+
+   
+    <script src="./es2.js"></script>
+</body>
+</html>
